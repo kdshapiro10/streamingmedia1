@@ -1,3 +1,20 @@
+html {
+    background-color: #020659;
+}
+
+body {
+    margin: 0 auto;
+    max-width:375px;
+    background-color:#fff;
+    display:flex;
+}
+
+
+
+
+
+
+
 ul {
     overflow: hidden;
     max-height: 0;
