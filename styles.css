@@ -8,11 +8,8 @@ body {
     background-color:#fff;
 }
 
-
-#trending {
-    width:375px;
-    display:flex;
-    overflow:scroll;
+nav h2 {
+    visibility:hidden;
 }
 
 
@@ -22,6 +19,33 @@ ul {
     max-height: 0;
     transition: max-height .2s ease-out;
 }
+
+.container {
+    margin-right:10px;
+}
+
+dl {
+    position:relative;
+    color:#590242;
+}
+
+dt {
+    position: absolute;
+    padding-right:5px;
+}
+
+dd {
+    position:absolute;
+}
+
+
+audio {
+    position:absolute;
+    bottom: 150px;
+    left: 5px;
+    opacity: 75%;
+}
+
 label {
     cursor: pointer;
     display: inline-block;
@@ -70,10 +94,48 @@ input:checked ~ label span:after {
 input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
     top: 0;
 }
+audio::-webkit-media-controls-mute-button {
 
-nav h2 {
-    visibility:hidden;
 }
+audio::-webkit-media-controls-play-button {
+
+}
+audio::-webkit-media-controls-enclosure {
+
+}
+
+#trending ::-webkit-scrollbar {
+
+}
+#trending ::-webkit-scrollbar-track {
+
+}
+#trending ::-webkit-scrollbar-thumb {
+
+}
+#trending ::-webkit-scrollbar-thumb:hover {
+
+}
+#playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+
+}
+#playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+
+}
+#playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+
+}
+#playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+
+}
+
+#trending {
+    width:375px;
+    display:flex;
+    overflow:scroll;
+    margin-right: 10px;
+}
+
 
 @media screen and (min-width:834px) {
     body {
