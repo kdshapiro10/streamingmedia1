@@ -6,18 +6,48 @@ body {
     margin:0 auto;
     width:375px;
     background-color:#fff;
+    display:grid; 
+    grid-template-areas:
+    "nav"
+    "header"
+}
+
+header {
+      background: linear-gradient(90deg, rgba(33,4,217,1) 0%, rgba(2,6,89,1) 33%, rgba(2,6,89,1) 66%, rgba(0,0,0,1) 100%);
+      color: #ffffff;
+      grid-area:header;
 }
 
 nav h2 {
     visibility:hidden;
 }
 
+nav a {
+    color:#ffffff;
+}
 
-ul {
+nav {
+    background-color:#030A8C;
+    text-transform:uppercase;
+    grid-area:nav;
+    color:#ffffff;
+}
+
+nav ul {
     background-color:#2104D9;
     overflow: hidden;
     max-height: 0;
     transition: max-height .2s ease-out;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+[href="#home"] {
+    text-transform:capitalize;
+    font-variant:small-caps;
+    font-weight:bold;
+    font-size:30px;
 }
 
 .container {
